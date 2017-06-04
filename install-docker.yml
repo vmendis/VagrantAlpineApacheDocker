@@ -1,0 +1,40 @@
+---
+- name: Install docker on Debian jessie
+  hosts: bp
+  sudo: True
+
+  tasks:
+
+    - name: get the ubuntu release
+      shell: lsb_release -cs
+      register: ubuntu_release
+
+    - name: update the package cache
+      apt: update_cache=yes
+
+    - name: Install packages to allow apt to use a repository over HTTPS
+      apt: name={{ item }} state=present
+      with_items:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg2
+      - software-properties-common
+
+    - name: Get Docker’s official GPG key
+      apt_key:
+        url: "https://download.docker.com/linux/debian/gpg"
+        state: present
+
+    - name: add stable repository
+      # Very very ugly doing this way
+      command: add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian jessie stable"
+
+    - name: update the package cache
+      apt: update_cache=yes
+
+    - name: Install latest version of docker
+      apt: name=docker-ce  state=latest
+
+    - name: make sure docker is started
+      service: name=docker state=restarted

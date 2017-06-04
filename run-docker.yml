@@ -1,0 +1,17 @@
+---
+- name: time to run our baby
+  hosts: bp
+  sudo: True
+
+  tasks:
+
+  #  - name: start the container
+  #    docker_container:
+  #      name: nginx
+  #      image: virantha-alpine-nginx
+  #      state: started
+  # An apparent bug in Mac OS X stops me using docker_container module
+
+
+    - name: start the container
+      command: docker run --rm -p 80:80 virantha-alpine-nginx 
