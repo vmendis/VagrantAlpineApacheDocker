@@ -7,9 +7,11 @@ simple web page.
 1. Download and install the appropriate version of VirtualBox from here:
    https://www.virtualbox.org/
 
+1a. Make sure Ansible is installed on your computer. 
+
 2. Download the scripts from this site
 
-3.
+3. Network setup
 
 Local computer ip = 192.168.1.146
 Guest OS ip = 192.168.33.99
