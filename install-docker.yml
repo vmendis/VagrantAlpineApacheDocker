@@ -1,7 +1,7 @@
 ---
 - name: Install docker on Debian jessie
   hosts: bp
-  sudo: True
+  become: true
 
   tasks:
 

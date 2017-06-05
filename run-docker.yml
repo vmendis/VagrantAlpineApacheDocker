@@ -1,7 +1,7 @@
 ---
 - name: time to run our baby
   hosts: bp
-  sudo: True
+  become: true 
 
   tasks:
 

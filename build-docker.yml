@@ -1,7 +1,7 @@
 ---
 - name: Build a Alpine Linux docker image with nginx
   hosts: bp
-  sudo: True
+  become: true
 
   tasks:
 
