@@ -1,4 +1,4 @@
-# BPTest
+# VagrantAlpineApacheDocker
 
 The idea behind this repository is to use Vargrant, Oracle VirtualBox and Ansible to
 provision a simple server, build a web service based on nginx and serve out a
