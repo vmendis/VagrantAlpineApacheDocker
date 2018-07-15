@@ -18,6 +18,15 @@ simple web page.
 4. Run "vagrant up"
 
 
+Testing:
+
+1. Open a browser and enter :
+http://localhost:8080/
+
+
+2. Following message must appear on the browser window:
+
+Hello BP..........
 
 
 3. Network setup
