@@ -34,21 +34,27 @@ http://localhost:8080/
 
 Hello BP..........
 
+3. Interactive login to the docker
 
-3. Network setup
+ssh -l vagrant  -i .vagrant/machines/default/virtualbox/private_key 192.168.33.99
+
+
+
+
+NETWORK SETUP
 
 Local computer ip = 192.168.1.146
+
 Guest OS ip = 192.168.33.99
      Specified in Vagrantfile
      defined config.vm.network "private_network", ip: "192.168.33.99"
-
 
 Confirm
    config.vm.network "forwarded_port", guest: 80, host: 8080
 
 
 
-   ssh -l vagrant  -i .vagrant/machines/default/virtualbox/private_key 192.168.33.99
+   
 
 
 
