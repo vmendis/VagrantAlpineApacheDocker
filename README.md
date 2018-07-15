@@ -7,7 +7,9 @@ simple web page.
 1. Download and install the appropriate version of VirtualBox from here:
    https://www.virtualbox.org/
 
-1a. Make sure Ansible is installed on your computer. 
+1a. Make sure Ansible is installed on your computer.  //  do we need this on the host computer ??
+
+
 
 2. Download the scripts from this site
 
