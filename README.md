@@ -18,6 +18,7 @@ simple web page.
 4. Run "vagrant up"
 
 5. Following message indicates the Web server has been built and in service
+
 TASK [start the container] *****************************************************
 
 NOTE: See "screen-capture-of-the-run.txt" for full output of the command
