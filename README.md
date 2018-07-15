@@ -4,14 +4,21 @@ The idea behind this repository is to use Vargrant, Oracle VirtualBox and Ansibl
 provision a simple server, build a web service based on nginx and serve out a
 simple web page.
 
-1. Download and install the appropriate version of VirtualBox from here:
-   https://www.virtualbox.org/
+1. Download and install the correct versions of following software :
+   1a. VirtualBox 
+       https://www.virtualbox.org/
+   
+   1b. Vagrant 
+       https://www.vagrantup.com/downloads.html
 
-1a. Make sure Ansible is installed on your computer.  //  do we need this on the host computer ??
+2. Download this git repository to your computer and unzip it
+
+3. cd to the directory where the uniped file are
+
+4. Run "vagrant up"
 
 
 
-2. Download the scripts from this site
 
 3. Network setup
 
