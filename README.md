@@ -46,8 +46,10 @@ NETWORK SETUP
 Local computer ip = 192.168.1.146
 
 Guest OS ip = 192.168.33.99 <br />
-     Specified in Vagrantfile  <br />
-     defined config.vm.network "private_network", ip: "192.168.33.99" <br />
+     This is specified in Vagrantfile  <br />     
+             defined config.vm.network "private_network", ip: "192.168.33.99" <br />
+
+Port 80 in the docker is mapped to port 8080 on local computer
 
 Confirm <br />
    config.vm.network "forwarded_port", guest: 80, host: 8080
