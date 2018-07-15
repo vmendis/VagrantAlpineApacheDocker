@@ -32,7 +32,7 @@ http://localhost:8080/
 
 2. Following message must appear on the browser window:
 
-Hello BP..........
+   Hello BP..........
 
 3. Interactive login to the docker
 
