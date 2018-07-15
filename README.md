@@ -36,7 +36,7 @@ Hello BP..........
 
 3. Interactive login to the docker
 
-ssh -l vagrant  -i .vagrant/machines/default/virtualbox/private_key 192.168.33.99
+   ssh -l vagrant  -i .vagrant/machines/default/virtualbox/private_key 192.168.33.99
 
 
 
