@@ -45,11 +45,11 @@ NETWORK SETUP
 
 Local computer ip = 192.168.1.146
 
-Guest OS ip = 192.168.33.99
-     Specified in Vagrantfile
-     defined config.vm.network "private_network", ip: "192.168.33.99"
+Guest OS ip = 192.168.33.99 <br />
+     Specified in Vagrantfile  <br />
+     defined config.vm.network "private_network", ip: "192.168.33.99" <br />
 
-Confirm
+Confirm <br />
    config.vm.network "forwarded_port", guest: 80, host: 8080
 
 
