@@ -13,7 +13,7 @@ simple web page.
 
 2. Download this git repository to your computer and unzip it
 
-3. cd to the directory where the uniped file are
+3. cd to the directory where the unziped file are
 
 4. Run "vagrant up"
 
