@@ -39,6 +39,18 @@ http://localhost:8080/
    ssh -l vagrant  -i .vagrant/machines/default/virtualbox/private_key 192.168.33.99
 
 
+Cleanup :
+
+1. Press Ctrl/C on the terminal window where "vagrant up" was run
+
+2. Tidy up Vagrant enviornment
+
+$ vagrant global-status     // look for the id of the virtual box. Your output will be different to mine
+
+id       name    provider   state   directory                                                                       
+--------------------------------------------------------------------------------------------------------------------
+d21c245  default virtualbox running /Users/virantha/BPTest-July-2018-Fixing-README/VagrantAlpineApacheDocker-master 
+
 
 
 NETWORK SETUP
@@ -56,7 +68,9 @@ Confirm <br />
 
 
 
-   
+Cleanup of the Vagrant enviornment
+
+
 
 
 
@@ -74,4 +88,4 @@ NOTES:
         time spent on researching this
 
    So, I am using the ansible 'command' module as an alternative.
-3.
+
