@@ -1,7 +1,7 @@
 # VagrantAlpineApacheDocker
 
 The idea behind this repository is to use Vargrant, Oracle VirtualBox and Ansible to
-provision a simple server, build a web service based on nginx and serve out a
+provision a simple Linux server, build a web service based on nginx and serve out a
 simple web page.
 
 1. Download and install the correct versions of following software :
