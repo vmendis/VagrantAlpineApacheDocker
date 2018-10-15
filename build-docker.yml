@@ -7,14 +7,14 @@
 
     - name: copy the Dockerfile and ngnix config files to remote host
       copy:
-        src: ./bp-site
+        src: ./HelloWorld
         dest: /tmp/
         mode: 0755
 
 
     # - name: Build the Alpine Linux docker image with nginx
     #  docker_image:
-    #    path: /tmp/bp-site
+    #    path: /tmp/HelloWorld
     #    name: somename
     #    tag: v1
     #    state: present
@@ -26,9 +26,9 @@
     # Lots of bugs are reported.
 
     - name: Build the Alpine Linux docker image with nginx using the command module
-      command: docker build -t virantha-alpine-nginx /tmp/bp-site
+      command: docker build -t virantha-alpine-nginx /tmp/HelloWorld
 
-    - name: do some cleanup. delete /tmp/bp-site
+    - name: do some cleanup. delete /tmp/HelloWorld
       file:
         state: absent
-        path: "/tmp/bp-site"
+        path: "/tmp/HelloWorld"
