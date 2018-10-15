@@ -45,11 +45,7 @@ Cleanup :
 
 2. Tidy up Vagrant enviornment
 
-$ vagrant global-status     // look for the id of the virtual box. Your output will be different to mine
-
-
-id       name    provider   state    direcory
-d21c245  default virtualbox running /Users/virantha/BPTest-July-2018-Fixing-README/VagrantAlpineApacheDocker-master <br />
+$ vagrant global-status     // look for the id of the virtual box. <br>
 
 
 $ vagrant destroy d21c245       // destroy the virtualbox  <br />
