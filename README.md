@@ -4,6 +4,9 @@ The idea behind this repository is to use Vargrant, Oracle VirtualBox and Ansibl
 provision a simple Linux server, build a web service based on nginx and serve out a
 simple web page.
 
+NOTE: The code will run on Linux or MacOS machines.
+But will not work on Windows machines as there is no native 'sshd' support on Windows.
+
 1. Download and install the correct versions of following software :
    1a. VirtualBox 
        https://www.virtualbox.org/
