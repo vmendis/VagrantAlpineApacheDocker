@@ -14,4 +14,9 @@
 
 
     - name: start the container
-      command: docker run --rm -p 80:80 virantha-alpine-nginx 
+      # First option will automatically remove the container when it exits
+      # command: docker run --rm -p 80:80 virantha-alpine-nginx 
+      
+      # This option will keep the dokcer image running even after a restart of docker
+      # or the host
+      command: docker run -itd --restart=always -p 80:80 virantha-alpine-nginx
