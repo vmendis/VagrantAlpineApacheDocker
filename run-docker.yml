@@ -14,7 +14,11 @@
 
 
     - name: start the container
+<<<<<<< HEAD
       # This option will automatically remove the container when it exits
+=======
+      # First option will automatically remove the container when it exits
+>>>>>>> master
       # command: docker run --rm -p 80:80 virantha-alpine-nginx 
       
       # This option will keep the dokcer image running even after a restart of docker
